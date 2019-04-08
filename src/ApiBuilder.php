@@ -36,11 +36,11 @@ class ApiBuilder
         // Set the sensitive field array
         $this->sensitiveFields = config('api_helper.sensitive_fields', []);
 
-        // Set the default request options
-        $this->requestOptions = config('api_helper.default_request_options', []);
-
         // Set the default connection
         $this->connection = config('api_helper.default');
+
+        // Set the default request options
+        $this->requestOptions = config('api_helper.connections'. $this->connection .'default_request_options', []);
 
         // Set the api type
         $this->type = config('api_helper.connections.' . $this->connection . '.type');

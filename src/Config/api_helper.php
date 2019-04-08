@@ -15,29 +15,6 @@ return [
 
     'number_of_retries'       => 3,
 
-    /*
-        |--------------------------------------------------------------------------
-        | Default Guzzle Request Options
-        |--------------------------------------------------------------------------
-        |
-        | Sets the default Guzzle request options.
-        |
-        | http://docs.guzzlephp.org/en/stable/request-options.html
-        |
-        | 0 = Off
-        |
-    */
-
-    'default_request_options' => [
-        'http_errors'     => true,
-        'connect_timeout' => 10,
-        'timeout'         => 30,
-        'headers'         => [
-            "Accept"       => "application/json",
-            "Content-Type" => "application/json",
-        ],
-    ],
-
     // If no connection provided, use default
     'default'                 => 'httpbin',
 
