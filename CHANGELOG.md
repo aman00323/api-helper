@@ -18,4 +18,4 @@
 - Created phpunit.xml file so test cases can be run on any cloud server.
 - Added orchestra/testbench with phpunit for package testing
 - Updated TestCase added methods for provider and alias, also now able to mock config.
-- Added unit testing with circle ci
+- Added unit testing with circle ci.
